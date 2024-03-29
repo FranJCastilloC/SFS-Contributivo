@@ -1,0 +1,67 @@
+/* assets/custom.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Un fondo claro para la página completa */
+    margin: 0; /* Eliminar margen predeterminado */
+}
+
+/* Sidebar styling */
+.sidebar {
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px; /* Anchura del sidebar */
+    background-color: #333; /* Color de fondo del sidebar */
+    box-shadow: 3px 0 6px rgba(0,0,0,0.16), 3px 0 6px rgba(0,0,0,0.23); /* Sombra para el sidebar */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Estructura vertical para los links */
+}
+
+.sidebar .display-4 {
+    font-size: 2.5rem; /* Tamaño del título en el sidebar */
+    color: #ffffff; /* Color del título */
+    margin-bottom: 1rem;
+}
+
+/* Navbar link styling */
+.sidebar .nav-link {
+    color: #ddd; /* Color de los enlaces */
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Bordes redondeados para los enlaces */
+    text-decoration: none; /* No subrayado en los enlaces */
+    transition: background-color 0.2s, color 0.2s; /* Transición suave para efectos hover */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff; /* Color de fondo para el enlace activo */
+    color: #ffffff; /* Color del texto para el enlace activo */
+}
+
+/* Contenido principal */
+#page-content {
+    margin-left: 400px; /* Dejar espacio para el sidebar */
+    padding: 2rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; 
+    }
+    #page-content {
+        margin-left: 0;
+    }
+}
