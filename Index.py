@@ -12,7 +12,7 @@ sidebar = html.Div(
     [
         html.H2('Nombre del proyecto', className='display-4'),  # Asegúrate de que el nombre de la clase coincida con tu CSS
         html.Hr(),
-        html.P('Menu', className='lead'),  # Asegúrate de que el nombre de la clase coincida con tu CSS
+        html.P('Menus', className='lead'),  # Asegúrate de que el nombre de la clase coincida con tu CSS
         dbc.Nav(
             [
                 dbc.NavLink('Análisis Exploratorio de Datos', href='/modulo1', active='exact'),
